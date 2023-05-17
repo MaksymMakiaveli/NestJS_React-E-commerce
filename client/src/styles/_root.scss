@@ -64,16 +64,24 @@
   --transition-timing-primary   : ease;
   --transition-all-primary      : all var(--transition-duration-primary) var(--transition-timing-primary);
   --transition-bg-color-primary : background-color var(--transition-duration-primary) var(--transition-timing-primary);
+  --transition-color-primary    : color 0.5ms var(--transition-timing-primary);
 
+
+  // --------------- Components
+  --color-bg-btn-primary        : var(--color-primary-500);
+  --color-font-btn-primary      : var(--color-black-1);
 }
 
 // --------------- Light theme
 :root[data-theme=light] {
-  --color-bg-primary : var(--color-white);
+  --color-bg-primary     : var(--color-white);
+  --color-font-primary   : var(--color-gray-800);
+  --color-bg-btn-primary : green;
 }
 
 
 // --------------- Dark theme
 :root[data-theme=dark] {
-  --color-bg-primary : var(--color-black-1);
+  --color-bg-primary   : var(--color-black-1);
+  --color-font-primary : var(--color-white);
 }
